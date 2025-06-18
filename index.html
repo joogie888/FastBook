@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastBook - Connect with friends and the world around you</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>FastBook</h1>
+            </div>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search FastBook">
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#" class="active"><i class="fas fa-home"></i></a>
+                <a href="#"><i class="fas fa-tv"></i></a>
+                <a href="#"><i class="fas fa-store"></i></a>
+                <a href="#"><i class="fas fa-users"></i></a>
+                <a href="#" class="game-icon"><i class="fas fa-gamepad"></i></a>
+            </nav>
+            
+            <div class="user-menu">
+                <div class="profile-pic">
+                    <img src="images/main character profile.jpg" alt="Profile">
+                </div>
+                <span>User</span>
+                <div class="menu-icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <div class="user-info">
+                <img src="images/main character profile.jpg" alt="Profile">
+                <span>Joaquin</span>
+            </div>
+            
+            <div class="shortcut">
+                <a href="#"><i class="fas fa-user-friends"></i> Friends</a>
+                <a href="#"><i class="fas fa-bookmark"></i> Saved</a>
+                <a href="#"><i class="fas fa-flag"></i> Pages</a>
+                <a href="#"><i class="fas fa-users"></i> Groups</a>
+                <a href="#"><i class="fas fa-calendar-week"></i> Events</a>
+                <a href="#"><i class="fas fa-chevron-down"></i> See More</a>
+            </div>
+            
+            <div class="shortcut">
+                <h3>Your Shortcuts</h3>
+                <a href="#"><i class="fas fa-circle"></i> Pride Month</a>
+                <a href="#"><i class="fas fa-circle"></i> LGBTQIA+ Community</a>
+                <a href="#"><i class="fas fa-circle"></i> ako pa ba?</a>
+            </div>
+        </aside>
+        
+        <!-- Main Feed -->
+        <div class="main-content">
+            <!-- Create Post -->
+            <div class="create-post">
+                <div class="create-post-header">
+                    <img src="images/main character profile.jpg" alt="Profile">
+                    <button class="create-post-btn">What's on your mind?</button>
+                </div>
+                <div class="create-post-options">
+                    <button><i class="fas fa-video"></i> Live Video</button>
+                    <button><i class="fas fa-images"></i> Photo/Video</button>
+                    <button><i class="far fa-smile"></i> Feeling/Activity</button>
+                </div>
+            </div>
+            
+            <!-- Stories -->
+            <div class="stories">
+                <div class="story create-story">
+                    <div class="story-bg">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <p>Create Story</p>
+                </div>
+                
+                <!-- Sample Stories -->
+                <div class="story">
+                    <img src="images/story1.jpg" alt="Story">
+                    <div class="story-info">
+                        <img src="images/prof4.jpg" alt="Profile">
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                
+                <div class="story">
+                    <img src="images/story2.jpg" alt="Story">
+                    <div class="story-info">
+                        <img src="images/prof2.jpg" alt="Profile">
+                        <p>Jane Smith</p>
+                    </div>
+                </div>
+                
+                <div class="story">
+                    <img src="images/story3.jpg" alt="Story">
+                    <div class="story-info">
+                        <img src="images/prof3.jpg" alt="Profile">
+                        <p>Mike Johnson</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Posts -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="images/prof4.jpg" alt="Profile">
+                    <div class="post-user-info">
+                        <h4>John Doe</h4>
+                        <span>2 hrs ago <i class="fas fa-globe-americas"></i></span>
+                    </div>
+                    <div class="post-options">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                
+                <div class="post-content">
+                    <p>Enjoying a beautiful day at the beach! 🌊☀️ <span class="hashtag">#summer</span> <span class="hashtag">#vacation</span></p>
+                </div>
+                
+                <div class="post-stats">
+                    <div class="likes">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>245</span>
+                    </div>
+                    <div class="comments">
+                        <span>24 comments</span>
+                        <span>5 shares</span>
+                    </div>
+                </div>
+                
+                <div class="post-actions">
+                    <div class="like-container">
+                        <button class="like-btn"><i class="far fa-thumbs-up"></i> Like</button>
+                        <div class="reaction-options">
+                            <span class="reaction-icon" data-reaction="like">👍</span>
+                            <span class="reaction-icon" data-reaction="love">❤️</span>
+                            <span class="reaction-icon" data-reaction="haha">😂</span>
+                            <span class="reaction-icon" data-reaction="wow">😮</span>
+                            <span class="reaction-icon" data-reaction="sad">😢</span>
+                            <span class="reaction-icon" data-reaction="angry">😠</span>
+                        </div>
+                    </div>
+                    <button class="comment-btn"><i class="far fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
+                </div>
+                
+                <!-- Comment Section -->
+                <div class="comments-section">
+                    <div class="comment">
+                        <img src="images/prof6.jpg" alt="Joaquin" class="comment-avatar">
+                        <div class="comment-content">
+                            <div class="comment-header">Rod</div>
+                            <div class="comment-text">Sanaol</div>
+                        </div>
+                        <div class="comment-actions">
+                            <span>6h</span>
+                            <span>Like</span>
+                            <span>Reply</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comment Form -->
+                <form class="comment-form">
+                    <img src="images/main character profile.jpg" alt="Your profile" class="comment-avatar">
+                    <input type="text" placeholder="Write a comment...">
+                    <button type="submit" style="display: none;">Post</button>
+                </form>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <img src="images/tvpatol.jpg" alt="TV Patrol">
+                    <div class="post-user-info">
+                        <h4>TV Patrol</h4>
+                        <span>7h <i class="fas fa-globe-americas"></i></span>
+                    </div>
+                    <div class="post-options">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                
+                <div class="post-content">
+                    <p>Patuloy na nakararanas ng diskriminasyon ang mga miyembro ng LGBTQIA+. Ito'y sa kabila ng pag-aaral na isa ang Pilipinas sa mga pinaka-LGBTQIA+ community-friendly na bansa sa Asia.</p>
+
+                    <p>Kaya naman patuloy ang panawagan na ipasa na ang SOGIE Equality bill. <br> <br><span class="hashtag">#Pride2025</span></p>
+                    <video width="100%" controls>
+                        <source src="images/sogie bill video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div class="post-stats">
+                    <div class="likes">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>1.2K</span>
+                    </div>
+                    <div class="comments">
+                        <span>108 comments</span>
+                        <span>60 shares</span>
+                    </div>
+                </div>
+                
+                <div class="post-actions">
+                    <div class="like-container">
+                        <button class="like-btn"><i class="far fa-thumbs-up"></i> Like</button>
+                        <div class="reaction-options">
+                            <span class="reaction-icon" data-reaction="like">👍</span>
+                            <span class="reaction-icon" data-reaction="love">❤️</span>
+                            <span class="reaction-icon" data-reaction="haha">😂</span>
+                            <span class="reaction-icon" data-reaction="wow">😮</span>
+                            <span class="reaction-icon" data-reaction="sad">😢</span>
+                            <span class="reaction-icon" data-reaction="angry">😠</span>
+                        </div>
+                    </div>
+                    <button class="comment-btn"><i class="far fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
+                </div>
+                
+                <!-- Comment Section -->
+                <div class="comments-section">
+                    <div class="comment">
+                        <img src="images/comme1.jpg" alt="Rod" class="comment-avatar">
+                        <div class="comment-content">
+                            <div class="comment-header">Karen Maylupa</div>
+                            <div class="comment-text">This bill is useless</div>
+                        </div>
+                        <div class="comment-actions">
+                            <span>2h</span>
+                            <span>Like</span>
+                            <span>Reply</span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="images/comme2.jpg" alt="Rod" class="comment-avatar">
+                        <div class="comment-content">
+                            <div class="comment-header">Arianang Iniwan</div>
+                            <div class="comment-text">'Wag niyo ipilit yang agenda niyo</div>
+                        </div>
+                        <div class="comment-actions">
+                            <span>4h</span>
+                            <span>Like</span>
+                            <span>Reply</span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="images/comme3.jpg" alt="Rod" class="comment-avatar">
+                        <div class="comment-content">
+                            <div class="comment-header">Jinggoy Batumbakal</div>
+                            <div class="comment-text">if you pass sogie, you are favoring the lgbtq community over men and women. That is not equality, rather, favoritism</div>
+                        </div>
+                        <div class="comment-actions">
+                            <span>7h</span>
+                            <span>Like</span>
+                            <span>Reply</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comment Form -->
+                <form class="comment-form">
+                    <input type="text" placeholder="Write a comment...">
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <img src="images/survivor photo.jpg" alt="Profile">
+                    <div class="post-user-info">
+                        <h4>Kenneth Alindog</h4>
+                        <span>2 hrs ago <i class="fas fa-globe-americas"></i></span>
+                    </div>
+                    <div class="post-options">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                
+                <div class="post-content">
+                    <p>Breaking silence, shattering stigma: Everyone deserves respect and kindness, regardless of gender. Let's create a safe space for all to express themselves without fear of judgment or abuse.<br><br><span class="hashtag">#breakingthesilence</span><br><span class="hashtag">#pride2025</span><br><span class="hashtag">#passthesogiebill</span></p>
+                        <video width="100%" controls>
+                            <source src="images/manila.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                </div>
+                
+                <div class="post-stats">
+                    <div class="likes">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>564</span>
+                    </div>
+                    <div class="comments">
+                        <span>123 comments</span>
+                        <span>80 shares</span>
+                    </div>
+                </div>
+                
+                <div class="post-actions">
+                    <div class="like-container">
+                        <button class="like-btn"><i class="far fa-thumbs-up"></i> Like</button>
+                        <div class="reaction-options">
+                            <span class="reaction-icon" data-reaction="like">👍</span>
+                            <span class="reaction-icon" data-reaction="love">❤️</span>
+                            <span class="reaction-icon" data-reaction="haha">😂</span>
+                            <span class="reaction-icon" data-reaction="wow">😮</span>
+                            <span class="reaction-icon" data-reaction="sad">😢</span>
+                            <span class="reaction-icon" data-reaction="angry">😠</span>
+                        </div>
+                    </div>
+                    <button class="comment-btn"><i class="far fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
+                </div>
+                
+                <!-- Comment Section -->
+                <div class="comments-section">
+                    <div class="comment">
+                        <img src="images/prof6.jpg" alt="Joaquin" class="comment-avatar">
+                        <div class="comment-content">
+                            <div class="comment-header">Rod</div>
+                            <div class="comment-text">Pass the Sogie bill!!!</div>
+                        </div>
+                        <div class="comment-actions">
+                            <span>1h</span>
+                            <span>Like</span>
+                            <span>Reply</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comment Form -->
+                <form class="comment-form">
+                    <img src="images/main character profile.jpg" alt="Your profile" class="comment-avatar">
+                    <input type="text" placeholder="Write a comment...">
+                    <button type="submit" style="display: none;">Post</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="sponsor">
+                <h3>Sponsored</h3>
+                <div class="sponsor-item">
+                    <img src="images/jabi.png" alt="Sponsor">
+                    <div class="sponsor-info">
+                        <h4>Try our new product!</h4>
+                        <span>example.com</span>
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <img src="images/shopee.png" alt="Sponsor">
+                    <div class="sponsor-info">
+                        <h4>Summer Sale - 50% Off</h4>
+                        <span>shop.example.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="birthdays">
+                <h3>Birthdays</h3>
+                <p><i class="fas fa-birthday-cake"></i> <strong>John Smith</strong> and <strong>2 others</strong> have birthdays today.</p>
+            </div>
+            
+            <div class="contacts">
+                <div class="contacts-header">
+                    <h3>Contacts</h3>
+                    <div class="contact-actions">
+                        <i class="fas fa-video"></i>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                
+                <div class="contact-list">
+                    <div class="contact">
+                        <img src="images/prof2.jpg" alt="Friend">
+                        <span>Jane Smith</span>
+                        <span class="online"></span>
+                    </div>
+                    <div class="contact">
+                        <img src="images/prof3.jpg" alt="Friend">
+                        <span>Mike Johnson</span>
+                        <span class="online"></span>
+                    </div>
+                    <div class="contact">
+                        <img src="images/prof5.jpg" alt="Friend">
+                        <span>Sarah Williams</span>
+                        <span class="online"></span>
+                    </div>
+                    <div class="contact">
+                        <img src="images/prof6.jpg" alt="Friend">
+                        <span>David Brown</span>
+                        <span class="online"></span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p> 2025 FastBook</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Advertising</a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Cookies</a>
+                <a href="#">More</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
